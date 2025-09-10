@@ -3,7 +3,6 @@ from PIL import Image
 offset1 = 50
 offset2 = 25
 image = Image.open("monro.jpg")
-print(image.mode)
 r, g, b = image.split()
 
 r1 = r.crop((offset1, 0, r.width, r.height))
@@ -21,6 +20,7 @@ image.save("monro_finish.jpg")
 
 image.thumbnail((80, 80))
 image.save("monro_finish_thumbnail.jpg")
+
 
 
 
